@@ -1,0 +1,58 @@
+datatypes xs = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = bibliotheque
+bibliotheque = element bibliotheque {
+                  livres*, auteurs*, adresse+
+               }
+               
+livres = element livres{livre*}
+
+livre = element livre {
+           attribute langue {text},
+           attribute auteurs {text},
+           ((titre,annee,prix)|
+           (annee,prix,titre)|
+           (annee,titre,prix)|
+           (prix,annee,titre)|
+           (prix,titre,annee)|
+           (titre,prix,annee)),
+           element couverture {xs:anyURI}?,
+           element commentaire {text}?
+       }
+       
+auteurs = element auteurs {auteur*}
+       
+auteur = element auteur {
+                 attribute ident {xs:ID},
+                 ((nom, prenom)|(prenom, nom)),
+                 adresse,
+                 commentaire,
+                 email
+           }
+
+adresse= element adresse {
+                 element numero {xs:integer},
+                 element rue {text},
+                 element ville {text},
+                 element cp {xs:string}
+          }
+
+Prix = xs:decimal {
+              minInclusive = "0"
+              maxInclusive = "100"}
+              
+Titre = xs:string{
+              maxLength = "60"}
+              
+Devise = "CAD"|"USD"|"EURO"
+
+nom = element nom {text}
+prenom = element prenom {text}
+commentaire = element commentaire{text}?
+email = element email {xs:string}
+
+titre = element titre {text}
+annee = element annee {xs:gYear}
+prix = element prix  {
+ attribute devise {Devise}?,
+            Prix}

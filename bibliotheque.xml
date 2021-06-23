@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bibliotheque SYSTEM "biblio.dtd">
+<bibliotheque>
+    <livres>
+        <livre langue = "francais" auteurs = "Erik T.Ray">
+            <annee>2003</annee>
+            <prix>39.95</prix>
+            <titre>Erik T.Ray</titre>
+            <couverture> URL de couverture</couverture>
+            <commentaire>Very good</commentaire>
+        </livre>
+        <livre langue = "francais" auteurs = "Charles Beaudelaire">
+            <titre>Les fleurs du Mal</titre>
+            <prix devise = "USD">90.00</prix>
+            <annee>1996</annee>
+            <couverture> URL de couverture</couverture>
+            <commentaire>Very good</commentaire>
+        </livre>
+        <livre langue = "francais" auteurs = "JK Rowling">
+            <prix devise = "USD">29.99</prix>
+            <titre>Harry Potter</titre>
+            <annee>2005</annee>
+            <couverture> URL de couverture</couverture>
+            <commentaire>Very good</commentaire>
+        </livre>
+        <livre langue = "francais" auteurs = "Joshua Bloch">
+            <annee>2001</annee>
+            <prix devise = "USD">31.72</prix>
+            <titre>Effective Java</titre>
+            <couverture> URL de couverture</couverture>
+            <commentaire>Very good</commentaire>
+        </livre>
+        <livre langue = "francais" auteurs = "Paulo Coelho">
+            <titre>The Archer</titre>
+            <annee>2020</annee>
+            <prix devise = "USD">28.00</prix>
+            <couverture> URL de couverture</couverture>
+            <commentaire>Very good</commentaire>
+        </livre>
+        <livre langue = "francais" auteurs = "Paulo Coelho">
+            <titre>The Alchemist</titre>
+            <annee>2014</annee>
+            <prix devise = "USD">21.00</prix>
+            <couverture> URL de couverture</couverture>
+            <commentaire>Very good</commentaire>
+        </livre>
+        <livre langue = "francais" auteurs = "Paulo Coelho">
+            <titre>The Pilgramage</titre>
+            <annee>2008</annee>
+            <prix devise = "USD">19.99</prix>
+            <couverture> URL de couverture</couverture>
+            <commentaire>Very good</commentaire>
+        </livre>
+    </livres>
+    <auteurs>
+        <auteur ident = "ID">
+            <prenom>Charles</prenom>
+            <nom>Baudelaire</nom>
+            <adresse>
+                <numero>12</numero>
+                <rue>Cleroux</rue>
+                <ville>Laval</ville>
+                <cp>J733P6</cp>
+            </adresse>
+            <commentaire>good</commentaire>
+            <email>charlesbaudelaire@gmail.com</email>
+        </auteur>
+        <auteur ident = "ID2">
+            <nom>Charles</nom>
+            <prenom>Baudelaire</prenom>
+            <adresse>
+                <numero>12</numero>
+                <rue>Cleroux</rue>
+                <ville>Laval</ville>
+                <cp>J733P6</cp>
+            </adresse>
+            <commentaire>good</commentaire>
+            <email>charlesbaudelaire@gmail.com</email>
+        </auteur>
+        <auteur ident = "ID3">
+            <prenom>Coelho</prenom>
+            <nom>Paulo</nom>
+            <adresse>
+                <numero>333</numero>
+                <rue>De La Commune</rue>
+                <ville>Montreal</ville>
+                <cp>H7P3P8</cp>
+            </adresse>
+            <commentaire>good</commentaire>
+            <email>paulocoelho@gmail.com</email>
+        </auteur>
+    </auteurs>
+    <adresse>
+        <numero>123</numero>
+        <rue>Vincent</rue>
+        <ville>Montreal</ville>
+        <cp>H2P 3P4</cp>
+    </adresse>
+</bibliotheque>
